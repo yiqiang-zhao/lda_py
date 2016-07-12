@@ -127,7 +127,7 @@ def reset_stat():
     ac_nk.clear()
 
 def predict(widl):
-    global K, V, n_k, n_kt, iter_num, ac_nkt, ac_nk
+    global K, V, n_k, n_kt, iter_num 
 
     # init
     z    = []
@@ -219,13 +219,14 @@ def process(fnd, fna, fnt):
     fo2.close()
 
 def main():
-    path = "./db_data/"
+    path = "./data/"
 
-    fn_dic  = path + "xaaab_lda_dic.dat"
-    fn_stat = path + "xaaab_lda_stat.dat"
-    fn_data = path + "xaaaa"
-    fn_assign  = path + "xaaaa_p_assign.dat"
-    fn_top_dis = path + "xaaaa_p_td.dat"
+    fn_dic  = path + "dic.dat"
+    fn_stat = path + "stat.dat"
+
+    fn_data = path + "test_data" # 
+    fn_assign  = path + "test_p_assign.dat" # 
+    fn_top_dis = path + "test_p_td.dat"     #
 
     load_dic(fn_dic)
     load_stat(fn_stat)

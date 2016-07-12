@@ -214,17 +214,17 @@ def save_stat(fn):
 
 def main():
     global K, num_it
-    path = "./db_data/"
-    fn_doc_set = path + "xaaab"
+    path = "./data/"
+    fn_doc_set = path + "raws.dat"
 
-    fn_dic = path + "xaaab_lda_dic.dat"
-    fn_doc = path + "xaaab_lda_docs.dat"
+    fn_dic = path + "dic.dat"
+    fn_doc = path + "docs.dat"
 
-    fn_theta = path + "xaaab_lda_theta.dat"
-    fn_phi = path + "xaaab_lda_phi.dat"
-    fn_tassign = path + "xaaab_lda_tassign.dat"
+    fn_theta = path + "theta.dat"
+    fn_phi = path + "phi.dat"
+    fn_tassign = path + "tassign.dat"
 
-    fn_stat = path + "xaaab_lda_stat.dat"
+    fn_stat = path + "stat.dat"
 
     K = 50
     num_it = 20
